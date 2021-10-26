@@ -27,7 +27,7 @@ public class EmployeeMockRepository {
     }
 
     private EmployeeEntity employee(long id, String lastname, String firstname, String jobTitle, double salaryAmount, String currencyCode, Integer hiringYear, Month hiringMonth) {
-        return employee(id, lastname, firstname, jobTitle, salaryAmount, currencyCode, hiringYear, hiringMonth);
+        return employee(id, lastname, firstname, jobTitle, salaryAmount, currencyCode, hiringYear, hiringMonth, null, null);
     }
 
     private EmployeeEntity employee(long id, String lastname, String firstname, String jobTitle, double salaryAmount, String currencyCode, Integer hiringYear, Month hiringMonth, Integer leavingYear, Month leavingMonth) {
@@ -39,7 +39,8 @@ public class EmployeeMockRepository {
                 .salaryAmount(salaryAmount)
                 .salaryCurrency(Currency.getInstance(currencyCode))
                 .hiringDate(getLocalDate(hiringYear, hiringMonth))
-                .leavingDate(getLocalDate(leavingYear, leavingMonth)).build();
+                .leavingDate(getLocalDate(leavingYear, leavingMonth))
+                .build();
     }
 
     private LocalDate getLocalDate(Integer leavingYear, Month leavingMonth) {

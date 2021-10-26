@@ -11,6 +11,11 @@ public class EmployeeMapper {
                 .id(entity.getId())
                 .lastname(entity.getLastname())
                 .firstname(entity.getFirstname())
+                .jobTitle(entity.getJobTitle())
+                .salaryAmount(entity.getSalaryAmount())
+                .salaryCurrency(entity.getSalaryCurrency())
+                .hiringDate(entity.getHiringDate())
+                .leavingDate(entity.getLeavingDate())
                 .build();
     }
 }
