@@ -9,6 +9,7 @@ import java.util.Currency;
 import java.util.List;
 
 @Repository
+@SuppressWarnings("java:S107")
 public class EmployeeMockRepository {
 
     public List<EmployeeEntity> findAll() {

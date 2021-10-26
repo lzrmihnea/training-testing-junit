@@ -2,7 +2,6 @@ package eu.demo.service.model;
 
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 import java.util.Currency;
