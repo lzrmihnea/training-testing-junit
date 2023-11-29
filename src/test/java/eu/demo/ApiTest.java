@@ -26,10 +26,12 @@ class ApiTest {
     void greetingShouldReturnSentString() {
         // Given a String that we send to the API GET endpoint
         String expectedString = "test-me";
-        String requestString = "http://localhost:" + port + Constants.REST_API_PREFIX + "/hello/" + expectedString;
+        String requestString = "http://localhost:" + port
+                + Constants.REST_API_PREFIX + "/hello/" + expectedString;
 
         // When we call said endpoint and get the response
-        ResponseEntity<String> responseEntity = this.restTemplate.getForEntity(requestString, String.class);
+        ResponseEntity<String> responseEntity =
+                this.restTemplate.getForEntity(requestString, String.class);
 
         // That response is the test message sent.
         assertTrue(responseEntity.getStatusCode().is2xxSuccessful());

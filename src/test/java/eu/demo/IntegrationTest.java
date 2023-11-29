@@ -1,7 +1,6 @@
 package eu.demo;
 
 import eu.demo.controller.DemoController;
-import eu.demo.repository.EmployeeMockRepository;
 import eu.demo.service.EmployeeService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
